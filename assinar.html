@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assine o Jornal 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .form-container {
+            background-color: white;
+            width: 60%;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h2 {
+            color: #1e3a5f;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #1e3a5f;
+            color: white;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #575757;
+        }
+        .form-group input[type="submit"]:active {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Assine o Jornal 360</h1>
+    </header>
+    <nav>
+        <a href="noticias.html">Notícias</a>
+        <a href="esportes.html">Esportes</a>
+        <a href="previsao.html">Previsão do Tempo</a>
+        <a href="vagas.html">Vagas de Emprego</a>
+        <a href="horoscopo.html">Horóscopo</a>
+    </nav>
+
+    <div class="form-container">
+        <h2>Formulário de Assinatura</h2>
+        <form action="thankyou.html" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Assinar Agora">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
