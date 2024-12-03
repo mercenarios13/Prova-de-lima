@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jornal 360</title>
+    <title>Vagas de Emprego - Jornal 360</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,115 +30,90 @@
         nav a:hover {
             background-color: #575757;
         }
-        .news-container {
+        .jobs-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             padding: 20px;
         }
-        .news-item {
+        .job-item {
             background-color: white;
             border-radius: 8px;
-            overflow: hidden;
+            padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
-        .news-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .job-item:hover {
+            transform: translateY(-5px);
         }
-        .news-item h2 {
-            margin: 10px;
+        .job-item h2 {
+            color: #1e3a5f;
             font-size: 1.5em;
+            margin-bottom: 10px;
         }
-        .news-item p {
-            padding: 0 10px 10px 10px;
+        .job-item p {
             color: #666;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .apply-button:hover {
+            background-color: #16416b;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jornal 360</h1>
+        <h1>Jornal 360 - Vagas de Emprego</h1>
     </header>
     <nav>
         <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
         <a href="esportes.html">Esportes</a>
         <a href="previsao.html">Previsão do Tempo</a>
-        <a href="assinar.html">Assinar Notícias</a>
         <a href="horoscopo.html">Horoscopo</a>
-        <a href="vagas.html">Vagas de Emprego</a>
+        <a href="assinar.html">Assinar Notícias</a>
     </nav>
-    <div class="news-container">
-        <div class="news-item">
-            <img src="https://s2-ge.glbimg.com/kSgAkVvmfTTwCajkC1BM5GI953M=/0x0:3219x2164/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/d/a/uqNRh0Q2KjTxm9EHOZBQ/2024-11-06t220025z-1852361575-up1ekb61p4og9-rtrmadp-3-soccer-champions-psg-atm-report.jpg" alt="Notícia 6">
-            <h2>Crise no PSG: jornal revela insatisfação de jogadores com Luis Enrique</h2>
-            <p>Os maus resultados recentes do PSG desataram uma crise que vinha se desenvolvendo nos bastidores do clube. De acordo com o jornal "L'Equipe", o técnico Luis Enrique já não goza do mesmo prestígio com os jogadores, que estão incomodados com a postura do espanhol no comando do time..</p>
+    <div class="jobs-container">
+        <div class="job-item">
+            <h2>Desenvolvedor Web Júnior</h2>
+            <p><strong>Empresa:</strong> Tech Solutions</p>
+            <p><strong>Local:</strong> São Paulo, SP</p>
+            <p><strong>Salário:</strong> R$ 3.500,00</p>
+            <p>Buscamos um desenvolvedor web com conhecimento em HTML, CSS e JavaScript para integrar nossa equipe.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
         </div>
-        
-        <div class="news-item">
-            <img src="https://s2-ge.glbimg.com/ZmSvcNYTqytRbXkIEagniTGn5iI=/0x0:2560x1707/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/I/c/h8bSjyStAknuwjhN0MIQ/0h6a8677-scaled.jpeg" alt="Notícia 7">
-            <h2>Pelo que o Inter ainda briga nas últimas duas rodadas do Brasileirão</h2>
-            <p>O sonho do título acabou, mas o Inter ainda tem objetivos a alcançar neste fim de Brasileirão. Não tão glamourosos, já que até a classificação à fase de grupos da Conmebol Libertadores está garantida.
-
-                Porém, o time ainda pode melhorar a situação na tabela e, em consequência, ganhar mais dinheiro, ter uma despedida no Beira-Rio com resultado positivo diante do campeão da competição continental e colocar Wesley na luta pela artilharia.</p>
+        <div class="job-item">
+            <h2>Analista de Marketing Digital</h2>
+            <p><strong>Empresa:</strong> Agência Criativa</p>
+            <p><strong>Local:</strong> Rio de Janeiro, RJ</p>
+            <p><strong>Salário:</strong> R$ 4.200,00</p>
+            <p>Responsável por planejar e executar campanhas de marketing digital. Experiência com redes sociais é um diferencial.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
         </div>
-        
-        <div class="news-item">
-            <img src="https://s2-ge.glbimg.com/6GpUi0Zl4yYZeyY1A3junR6cX2w=/0x0:1639x2048/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/s/d/kQXNTUQAGbYIhZCdj1Jg/54089962082-2f6b125c98-k.jpg" alt="Notícia 8">
-            <h2>Veja seis jogadores que podem movimentar a janela de transferências do São Paulo</h2>
-            <p>O São Paulo sabe que precisará vender jogadores nas próximas janelas de transferências para ter um 2025 mais tranquilo financeiramente. Mas quem? O ge reuniu, abaixo, atletas do elenco comandado pelo técnico Luis Zubeldía que devem ser alvos de outros clubes nos próximos meses por motivos diferentes.
-                
-                Em entrevista recente à CNN Esportes, Carlos Belmonte, diretor de futebol do São Paulo, admitiu a necessidade de reduzir o valor mensal gasto com o futebol do clube. Atualmente, o Tricolor gasta entre R$ 17 e 18 milhões com folha salarial. Para diminuir esse custo, precisará negociar atletas.</p>
+        <div class="job-item">
+            <h2>Assistente Administrativo</h2>
+            <p><strong>Empresa:</strong> Grupo Logística</p>
+            <p><strong>Local:</strong> Curitiba, PR</p>
+            <p><strong>Salário:</strong> R$ 2.800,00</p>
+            <p>Realizar tarefas administrativas e auxiliar no controle de documentos. Conhecimento em pacote Office é necessário.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
         </div>
-        
-        <div class="news-item">
-            <img src="https://s2-ge.glbimg.com/kHn3Q9Mt3T2RYGRpRgMACxE0vD4=/0x0:1602x1602/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/g/I/qE2EuyTmKdGux0SOkaIw/lakers.jfif" alt="Notícia 9">
-            <h2>LeBron tem prejuízo de R$ 169 milhões fora das quadras; entenda</h2>
-            <p>Um dos jogadores mais bem pagos da NBA, LeBron James não está tendo o mesmo sucesso fora das quadras. De acordo com o site "Bloomberg", o astro amargou um prejuízo de 28 milhões de dólares (cerca de R$ 169 milhões na cotação atual) com sua produtora de conteúdo, "SpringHill", em 2023.</p>
+        <div class="job-item">
+            <h2>Engenheiro de Software Sênior</h2>
+            <p><strong>Empresa:</strong> InovaTech</p>
+            <p><strong>Local:</strong> Belo Horizonte, MG</p>
+            <p><strong>Salário:</strong> R$ 12.000,00</p>
+            <p>Desenvolvimento de sistemas complexos. Experiência com Java, Python e bancos de dados é fundamental.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
         </div>
-        <div class="news-container">
-            <div class="news-item">
-                <img src="https://s2-ge.glbimg.com/c-AXvBA7jLd5ksOTPdmTll3CBsU=/0x0:2048x1365/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/T/n/38FSWNRtAzKqHln0oAkQ/54167681965-509caf0bbe-k.jpg" alt="Notícia 1">
-                <h2>Três de nove cenários dão título brasileiro ao Botafogo na próxima rodada; veja contas.</h2>
-     <p>Campeão da Conmebol Libertadores no sábado, o Botafogo tem chance de levantar mais um troféu nesta quarta-feira. Com três pontos de vantagem sobre o Palmeiras, o Alvinegro pode vencer o Brasileirão nesta quarta-feira, contra o Internacional, na 37ª rodada, no Beira-Rio, às 21h30.</p>
-            </div>
-            </div>
-            <div class="news-item">
-                <img src="https://s2-ge.glbimg.com/xra758do_Sc1U-AHnnBdLAzKszA=/0x124:2047x1275/1080x608/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/I/g/Tor9NPRje1sa0uAPlgcg/53872236054-75a949c34f-k.jpg" alt="Notícia 2">
-                <h2>Corinthians x Bahia: onde assistir ao vivo, horário e escalações.</h2>
-                <p>Corinthians e Bahia se enfrentam nesta terça-feira, às 20h (de Brasília), na Neo Química Arena, pela 37ª rodada do Campeonato Brasileiro. O Premiere transmite ao vivo para todo o Brasil. Você pode acessar/assistir no ge.globo e no globoplay (clique aqui para seguir todos os lances).
-    
-                    A partida é um confronto direto por uma das duas vagas restantes para a próxima edição da Conmebol Libertadores. Os dois times estão empatados com 50 pontos e abrem a rodada ocupando a sétima e oitava colocações, dentro da zona de classificação para o torneio.</p>
-            </div>
-    <div class="news-item">
-        <img src="https://s2-ge.glbimg.com/Lz4CSJdm9KynfD1EDVKvYOFWStE=/0x0:2048x1536/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/B/K/pJceWoQkSQ5BtaQfXSeQ/frs2vwbxsaamepc.jpg" alt="Notícia 3">
-        <h2>Flamengo domina lista de maiores rendas do futebol nordestino; veja Top-10.</h2>
-        <p>O empate, por 0 a 0, entre Fortaleza e Flamengo, na Arena Castelão, pela 35ª rodada do Campeonato Brasileiro, entrou na história. A partida teve a segunda maior renda da história do futebol nordestino: R$ R$ 3.034.107. O Rubro-Negro domina o ranking de maiores arrecadações da região. Na lista das 10 superiores, a equipe carioca aparece em seis oportunidades;</p>
-    </div>
-    <div class="news-item">
-        <img src="https://s2-ge.glbimg.com/Rwt4JPh5P4XDcOQwx2zm36yd8r8=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/E/A/tw7jRGRwWxswxTX6sVkw/53938699276-750d165a7c-k.jpg" alt="Notícia 4">
-        <h2>Cruzeiro observa mercado da América do Sul por zagueiro para 2025</h2>
-        <p>O Cruzeiro observa o mercado sul-americano para trazer reforços para a zaga, pensando na temporada 2025. O clube tem um levantamento de alvos no mercado e irá atrás de, pelo menos, um jogador para a posição, segundo apurou o ge.</p>
-    </div>
-    <div class="news-item">
-        <img src="https://s2-ge.glbimg.com/6uez9VGspH61EWLRBVegdROmXrA=/0x0:3933x2621/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/J/A/LuVpA9TnSZa07C2LQ6Ow/rib9670.jpg" alt="Notícia 5">
-        <h2>COF do Palmeiras aprova orçamento de 2025 com previsão de mais de R$ 1 bilhão em receita</h2>
-        <p>O Conselho de Orientação e Fiscalização (COF) do Palmeiras aprovou por unanimidade nesta segunda-feira a previsão orçamentária para o exercício de 2025. O clube prevê uma arrecadação de R$ 1,038 bilhão no período. O documento agora vai passar pela votação do Conselho Deliberativo (CD).
-            
-            A principal fonte de receitas previstas é a negociação de atletas. O Verdão tem como meta arrecadar R$ 301,562 milhões. Cerca de R$ 161 milhões já serão contabilizados da venda de Estêvão ao Chelsea, da Inglaterra, pelos valores fixos.
-            
-            A negociação foi fechada por cerca de 64 milhões de euros (R$ 369 milhões na cotação da época), sendo 40 milhões de euros (R$ 230,6 milhões) fixos, 20 milhões de euros (R$ 115,3 milhões) em metas consideradas mais fáceis de serem atingidas e 4 milhões de euros (R$ 23 milhões) em metas mais difíceis. O Verdão ficará com 70% da quantia, e o jogador e sua família com os outros 30%.</p>
-    </div>
-    <div class="news-item">
-        <img src="https://s2-ge.glbimg.com/eUb4LHgFjyn8wfN7tam6-TLEbYI=/0x0:4096x2731/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/o/9/kYgbOtTdyg0dzMcnkgRQ/f0xhvrfacagr3jp.jpg" alt="Notícia 5">
-        <h2>Santos fica pessimista em relação a Luís Castro e reabre conversas com Renato Gaúcho, do Grêmio</h2>
-        <p>O Santos segue no aguardo de uma resposta de Luís Castro.
-
-            Internamente, a diretoria entende que o "prazo final" para um posicionamento do português acaba nesta terça-feira e, nos bastidores, já adota um tom pessimista. Ciente da possibilidade de uma recusa, o Peixe se movimenta no mercado e volta a acenar na direção de Renato Gaúcho.
-
-            
-            Há uma proposta por escrito na mesa de Luís Castro. O Peixe oferece um salário que gira em torno de R$ 2 milhões pelo pacote de sua comissão técnica, além de independência para tomar decisões no departamento de futebol.</p>
     </div>
 </body>
 </html>
