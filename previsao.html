@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão do Tempo - Jornal 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            height: 50px; /* Ajuste a altura conforme necessário */
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .weather-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .weather-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .weather-item h2 {
+            color: #1e3a5f;
+            margin-bottom: 10px;
+        }
+        .weather-icon {
+            width: 80px;
+            height: 80px;
+        }
+        .temperature {
+            font-size: 2em;
+            color: #333;
+            margin: 10px 0;
+        }
+        .description {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/previsão do tempo.jpg" alt="Logo Jornal 360" class="logo">
+        <h1>Jornal 360 - Previsão do Tempo</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="esportes.html">Esportes</a>
+        <a href="vagas-de-emprego.html">Vagas de Emprego</a>
+    </nav>
+    <div class="weather-container">
+        <div class="weather-item">
+            <h2>São Paulo</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
+            <div class="temperature">30°C</div>
+            <div class="description">Ensolarado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Rio de Janeiro</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" alt="Nuvens" class="weather-icon">
+            <div class="temperature">28°C</div>
+            <div class="description">Parcialmente Nublado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Belo Horizonte</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163656.png" alt="Chuva" class="weather-icon">
+            <div class="temperature">22°C</div>
+            <div class="description">Chuva Leve</div>
+        </div>
+        <div class="weather-item">
+            <h2>Curitiba</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163665.png" alt="Tempestade" class="weather-icon">
+            <div class="temperature">18°C</div>
+            <div class="description">Tempestade</div>
+        </div>
+        <div class="weather-item">
+            <h2>Recife</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163663.png" alt="Nublado" class="weather-icon">
+            <div class="temperature">32°C</div>
+            <div class="description">Nublado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Porto Alegre</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
+            <div class="temperature">29°C</div>
+            <div class="description">Ensolarado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Manaus</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163658.png" alt="Chuva" class="weather-icon">
+            <div class="temperature">27°C</div>
+            <div class="description">Chuvisco</div>
+        </div>
+        <div class="weather-item">
+            <h2>Fortaleza</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
+            <div class="temperature">31°C</div>
+            <div class="description">Ensolarado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Salvador</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163659.png" alt="Nuvens" class="weather-icon">
+            <div class="temperature">30°C</div>
+            <div class="description">Parcialmente Nublado</div>
+        </div>
+        <div class="weather-item">
+            <h2>Vitória</h2>
+            <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" alt="Nuvens" class="weather-icon">
+            <div class="temperature">27°C</div>
+            <div class="description">Parcialmente Nublado</div>
+        </div>
+    </div>
+</body>
+</html>
