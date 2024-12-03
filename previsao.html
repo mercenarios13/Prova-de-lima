@@ -52,6 +52,7 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            cursor: pointer;
         }
         .weather-item h2 {
             color: #1e3a5f;
@@ -69,6 +70,10 @@
         .description {
             color: #666;
         }
+        .city-image {
+            display: none;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -80,69 +85,112 @@
         <a href="index.html">Início</a>
         <a href="noticias.html">Notícias</a>
         <a href="esportes.html">Esportes</a>
-        <a href="vagas-de-emprego.html">Vagas de Emprego</a>
+        <a href="vagas.html">Vagas de Emprego</a>
+        <a href="horoscopo.html">Horoscopo</a>
+        <a href="assinar.html">Assinar Notícias</a>
     </nav>
     <div class="weather-container">
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('sp-image')">
             <h2>São Paulo</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
             <div class="temperature">30°C</div>
             <div class="description">Ensolarado</div>
+            <div id="sp-image" class="city-image">
+                <img src="https://th.bing.com/th/id/R.fdc9fbd9f681be1c2ef5026005d956b2?rik=4t3ypzKif14jGA&riu=http%3a%2f%2ffoundtheworld.com%2fwp-content%2fuploads%2f2016%2f09%2fSao-Paulo-Brazil-4.jpg&ehk=a%2b%2bpVHfIm%2f4ij7593rvBSVYV3LnjuZYhbDsBmN7LWEs%3d&risl=&pid=ImgRaw&r=0" alt="São Paulo" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('rj-image')">
             <h2>Rio de Janeiro</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" alt="Nuvens" class="weather-icon">
             <div class="temperature">28°C</div>
             <div class="description">Parcialmente Nublado</div>
+            <div id="rj-image" class="city-image">
+                <img src="https://th.bing.com/th/id/OIP.nSEtS5VhlJIjhpCYC53f6gHaE8?rs=1&pid=ImgDetMain" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('bh-image')">
             <h2>Belo Horizonte</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163656.png" alt="Chuva" class="weather-icon">
             <div class="temperature">22°C</div>
             <div class="description">Chuva Leve</div>
+            <div id="bh-image" class="city-image">
+                <img src="https://wallpapercave.com/wp/wp4201748.jpg" alt="Belo Horizonte" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('ctba-image')">
             <h2>Curitiba</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163665.png" alt="Tempestade" class="weather-icon">
             <div class="temperature">18°C</div>
             <div class="description">Tempestade</div>
+            <div id="ctba-image" class="city-image">
+                <img src="https://th.bing.com/th/id/OIP.UV4AJYg1C46AQMbGj2QiQgHaE1?rs=1&pid=ImgDetMain" alt="Curitiba" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('recife-image')">
             <h2>Recife</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163663.png" alt="Nublado" class="weather-icon">
             <div class="temperature">32°C</div>
             <div class="description">Nublado</div>
+            <div id="recife-image" class="city-image">
+                <img src="https://lp-cms-production.imgix.net/2019-06/GettyImages-457407107_high.jpg?fit=crop&q=40&sharp=10&vib=20&auto=format&ixlib=react-8.6.4" alt="Recife" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('porto-image')">
             <h2>Porto Alegre</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
             <div class="temperature">29°C</div>
             <div class="description">Ensolarado</div>
+            <div id="porto-image" class="city-image">
+                <img src="https://th.bing.com/th/id/OIP.Ts7yz-PG5AOkbrJDADnN9wHaEU?rs=1&pid=ImgDetMain" alt="Porto Alegre" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('manaus-image')">
             <h2>Manaus</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163658.png" alt="Chuva" class="weather-icon">
             <div class="temperature">27°C</div>
             <div class="description">Chuvisco</div>
+            <div id="manaus-image" class="city-image">
+                <img src="https://th.bing.com/th/id/OIP.d5tshnZ2IxkzDxt4rE7ojQHaEJ?rs=1&pid=ImgDetMain" alt="Manaus" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('fortaleza-image')">
             <h2>Fortaleza</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Sol" class="weather-icon">
             <div class="temperature">31°C</div>
             <div class="description">Ensolarado</div>
+            <div id="fortaleza-image" class="city-image">
+                <img src="https://a.cdn-hotels.com/gdcs/production108/d1153/9bb4f4ff-afd9-4267-9e81-8fc370241afc.jpg" alt="Fortaleza" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('salvador-image')">
             <h2>Salvador</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163659.png" alt="Nuvens" class="weather-icon">
             <div class="temperature">30°C</div>
             <div class="description">Parcialmente Nublado</div>
+            <div id="salvador-image" class="city-image">
+                <img src="https://res.cloudinary.com/worldpackers/image/upload/c_limit,f_auto,q_auto,w_1140/ihko5t5ookxfm6wqll3v" alt="Salvador" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
-        <div class="weather-item">
+        <div class="weather-item" onclick="toggleCityImage('vitoria-image')">
             <h2>Vitória</h2>
             <img src="https://cdn-icons-png.flaticon.com/512/1163/1163657.png" alt="Nuvens" class="weather-icon">
             <div class="temperature">27°C</div>
             <div class="description">Parcialmente Nublado</div>
+            <div id="vitoria-image" class="city-image">
+                <img src="https://th.bing.com/th/id/R.0a48b1c8c937e762b26d988bdb2fa93d?rik=uen3Rh1TRTmcxQ&pid=ImgRaw&r=0" alt="Vitória" style="width:100%; max-height: 400px; object-fit: cover;">
+            </div>
         </div>
     </div>
+
+    <script>
+        function toggleCityImage(cityId) {
+            var cityImage = document.getElementById(cityId);
+            if (cityImage.style.display === "block") {
+                cityImage.style.display = "none";
+            } else {
+                cityImage.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
