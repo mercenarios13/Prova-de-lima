@@ -7,13 +7,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            transition: background-color 0.5s ease-in-out;
+            transition: background-image 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
         }
         header {
-            background-color: #1e3a5f;
+            background-color: rgba(30, 58, 95, 0.7); /* Fundo semitransparente */
             color: white;
             padding: 20px;
             text-align: center;
@@ -38,11 +39,12 @@
             padding: 20px;
         }
         .sign-item {
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.8); /* Leve transparência nas caixas */
             border-radius: 8px;
             padding: 15px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             text-align: center;
+            cursor: pointer;
         }
         .sign-item h2 {
             color: #1e3a5f;
@@ -79,69 +81,63 @@
         <a href="previsao.html">Previsão do Tempo</a>
         <a href="vagas.html">Vagas de Emprego</a>
         <a href="assinar.html">Assinar Notícias</a>
+        <a href="index.html">Inicio</a>
     </nav>
 
-    <div class="background-buttons">
-        <button onclick="changeBackgroundColor('#FFD700')">Amarelo</button>
-        <button onclick="changeBackgroundColor('#FF6347')">Tomate</button>
-        <button onclick="changeBackgroundColor('#1e3a5f')">Azul Escuro</button>
-        <button onclick="changeBackgroundColor('#98FB98')">Verde Claro</button>
-    </div>
-
     <div class="horoscope-container">
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/OIP.WCa1uNKM7VCcbZrUqayc9QHaHa?rs=1&pid=ImgDetMain')">
             <h2>Áries</h2>
             <p>Hoje é um dia para agir com determinação. Evite conflitos e foque em seus objetivos.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/R.02f0735cb14201d6d11a0d97d4800ad1?rik=%2bV6D8q4VTY82Lg&pid=ImgRaw&r=0')">
             <h2>Touro</h2>
             <p>Seu lado prático está em destaque. Use sua intuição para tomar decisões financeiras.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/OIP.L6AvQ8mvRfPZlHBD1pr51AHaE8?rs=1&pid=ImgDetMain')">
             <h2>Gêmeos</h2>
             <p>Comunicação é a chave. Aproveite para resolver mal-entendidos e fazer novos contatos.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/OIP.RWVx2ctuVAmEg-klNrMIrQHaEK?rs=1&pid=ImgDetMain')">
             <h2>Câncer</h2>
             <p>Valorize o tempo em família. Evite se sobrecarregar com problemas alheios.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://fortissima.com.br/wp-content/uploads/2016/11/signo-de-le%C3%A3o.jpg')">
             <h2>Leão</h2>
             <p>Brilhe, mas com humildade. Suas qualidades serão reconhecidas se agir com empatia.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://www.selecoes.com.br/media/uploads/2023/01/virgem.jpg')">
             <h2>Virgem</h2>
             <p>Foque em organizar suas tarefas. Detalhes fazem a diferença em projetos importantes.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/R.52ae20207ee71b734c98b4e588c60b3f?rik=OpIiQExiUFSZRw&pid=ImgRaw&r=0')">
             <h2>Libra</h2>
             <p>Busque equilíbrio nas relações. Evite tomar partido em discussões desnecessárias.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/OIP.i-VHYyBxGnvYAUqAo6ftIQHaHa?rs=1&pid=ImgDetMain')">
             <h2>Escorpião</h2>
             <p>Dia favorável para transformação. Reflita sobre mudanças que deseja implementar.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/R.f310080dfab60ff389890a7f89b4371b?rik=QAVc%2f3psVXPRlg&riu=http%3a%2f%2fimage.shutterstock.com%2fz%2fstock-vector-golden-sagittarius-zodiac-sign-vector-illustration-222214444.jpg&ehk=aIXpJVW%2fVbXtDhwvza2AESSJoN7XVa275cMzvyDsPig%3d&risl=&pid=ImgRaw&r=0')">
             <h2>Sagitário</h2>
             <p>Espere novidades. Aventuras e aprendizados podem surgir de forma inesperada.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://rsc.lavanguardia.com/img/horoscopo/horoscopo-capricornio.jpg')">
             <h2>Capricórnio</h2>
             <p>Disciplina será recompensada. Foque em suas metas de longo prazo.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://th.bing.com/th/id/R.fbfefaa44497002e639fcf2b2bc61a90?rik=ll36hJi4Z7fhhA&pid=ImgRaw&r=0')">
             <h2>Aquário</h2>
             <p>Dia propício para ideias inovadoras. Mantenha a mente aberta para novas oportunidades.</p>
         </div>
-        <div class="sign-item">
+        <div class="sign-item" onclick="changeBackgroundImage('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2016/12/07/signo-peixes-istock-521789149.jpg')">
             <h2>Peixes</h2>
             <p>Confie em sua intuição. Momentos de introspecção podem trazer respostas importantes.</p>
         </div>
     </div>
 
     <script>
-        function changeBackgroundColor(color) {
-            document.body.style.backgroundColor = color;
+        function changeBackgroundImage(imageUrl) {
+            document.body.style.backgroundImage = `url('${imageUrl}')`;
         }
     </script>
 </body>
