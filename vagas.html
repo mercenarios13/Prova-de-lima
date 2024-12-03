@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas de Emprego - Jornal 360</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 15px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .jobs-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .job-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .job-item:hover {
+            transform: translateY(-5px);
+        }
+        .job-item h2 {
+            color: #1e3a5f;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .job-item p {
+            color: #666;
+        }
+        .apply-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #1e3a5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .apply-button:hover {
+            background-color: #16416b;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jornal 360 - Vagas de Emprego</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="noticias.html">Notícias</a>
+        <a href="esportes.html">Esportes</a>
+        <a href="previsao.html">Previsão do Tempo</a>
+    </nav>
+    <div class="jobs-container">
+        <div class="job-item">
+            <h2>Desenvolvedor Web Júnior</h2>
+            <p><strong>Empresa:</strong> Tech Solutions</p>
+            <p><strong>Local:</strong> São Paulo, SP</p>
+            <p><strong>Salário:</strong> R$ 3.500,00</p>
+            <p>Buscamos um desenvolvedor web com conhecimento em HTML, CSS e JavaScript para integrar nossa equipe.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
+        </div>
+        <div class="job-item">
+            <h2>Analista de Marketing Digital</h2>
+            <p><strong>Empresa:</strong> Agência Criativa</p>
+            <p><strong>Local:</strong> Rio de Janeiro, RJ</p>
+            <p><strong>Salário:</strong> R$ 4.200,00</p>
+            <p>Responsável por planejar e executar campanhas de marketing digital. Experiência com redes sociais é um diferencial.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
+        </div>
+        <div class="job-item">
+            <h2>Assistente Administrativo</h2>
+            <p><strong>Empresa:</strong> Grupo Logística</p>
+            <p><strong>Local:</strong> Curitiba, PR</p>
+            <p><strong>Salário:</strong> R$ 2.800,00</p>
+            <p>Realizar tarefas administrativas e auxiliar no controle de documentos. Conhecimento em pacote Office é necessário.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
+        </div>
+        <div class="job-item">
+            <h2>Engenheiro de Software Sênior</h2>
+            <p><strong>Empresa:</strong> InovaTech</p>
+            <p><strong>Local:</strong> Belo Horizonte, MG</p>
+            <p><strong>Salário:</strong> R$ 12.000,00</p>
+            <p>Desenvolvimento de sistemas complexos. Experiência com Java, Python e bancos de dados é fundamental.</p>
+            <a href="#" class="apply-button">Candidatar-se</a>
+        </div>
+    </div>
+</body>
+</html>
